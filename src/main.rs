@@ -2,8 +2,9 @@
 
 use exercism_rust_track::*;
 
+use time::macros::datetime;
+use time::Duration;
 
 fn main() {
-    let out = reverse_string("hello");
-    println!("{}", out);
+    
 }

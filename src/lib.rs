@@ -7,3 +7,16 @@ pub fn reverse_string(input: &str) -> String {
     }
     return output
 }
+
+use time::PrimitiveDateTime as DateTime;
+use time::Duration;
+
+// ----------create date time 
+// use time::macros::datetime;
+// let start_date = datetime!(2015-01-24 22:00:00);
+// ----------cargo.toml file
+// time = { version = "0.3.21", features = ["macros"] }
+
+pub fn after(start: DateTime) -> DateTime {
+    return start + Duration::seconds(1000000000)
+}
