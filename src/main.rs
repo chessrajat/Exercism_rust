@@ -1,12 +1,12 @@
 #![allow(unused)]
 mod medium;
+mod easy;
 
+use easy::armstrong_numbers::is_armstrong_number;
 use exercism_rust_track::*;
-use medium::{clock::*, anagram::anagrams_for};
+use medium::{clock::*, anagram::anagrams_for, space_age::*};
 
 fn main() {
-    let a = "bAnana";
-    let b = ["enlists", "google", "inlets", "banana", "abnaan"];
-    let out = anagrams_for(a, &b);
-    println!("{:?}", out);
+    let result = is_armstrong_number(3_999_999_999);
+    println!("{}", result);
 }
