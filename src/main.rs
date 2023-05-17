@@ -2,13 +2,19 @@
 mod medium;
 mod easy;
 
-use easy::nthprime::*;
+use easy::proverb::*;
 use exercism_rust_track::*;
-use medium::{clock::*, anagram::anagrams_for, space_age::*};
 
 use crate::easy::beer_song::{verse, sing};
 
 fn main() {
-    let output = nth(5);
-    println!("{}", output);
+    use std::time::Instant;
+    let now = Instant::now();
+
+    let input = vec!["nail", "shoe", "horse"];
+    let output = build_proverb2(&input);
+    println!("{:?}", output);
+
+    let elapsed = now.elapsed();
+    println!("Elapsed: {:.2?}", elapsed);
 }
