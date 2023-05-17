@@ -5,3 +5,4 @@ pub mod grains;
 pub mod nthprime;
 pub mod prime_factors;
 pub mod proverb;
+pub mod raindrops;
