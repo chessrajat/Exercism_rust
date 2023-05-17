@@ -92,3 +92,8 @@ impl Planet for Neptune {
 
 
 // Needs to implement with macros this solution.
+macro_rules! planet {
+    ($n:ident, $p:expr) => {
+        pub struct $n; impl Planet for $n { fn period() -> f64 { $p } }
+    }
+}
