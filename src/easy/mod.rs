@@ -6,3 +6,4 @@ pub mod nthprime;
 pub mod prime_factors;
 pub mod proverb;
 pub mod raindrops;
+pub mod sum_of_multiples;
